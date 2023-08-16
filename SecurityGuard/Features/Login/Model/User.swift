@@ -8,6 +8,7 @@
 import Foundation
 
 struct User: Codable {
-    var username: String
-    var password: String
+    let username: String
+    let password: String
+    var devices: [Device]? = nil
 }

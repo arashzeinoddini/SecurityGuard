@@ -6,8 +6,8 @@
   
 */
 
-"Enter username" = "Enter username";
-"Enter password" = "Enter password";
+"Enter username" = "Username";
+"Enter password" = "Password";
 "Set username" = "Set username";
 "Set password" = "Set password";
 "Username and password should be bigger than %i characters" = "Username and password should be bigger than %i characters";
@@ -18,3 +18,6 @@
 "Enter username and password" = "Enter username and password";
 "Authetication failed" = "Authetication failed";
 "Plese set username and password first" = "Plese set username and password first";
+"User is not exist" = "User is not exist";
+"Fill all items" = "Fill all items";
+"The device has been added successfully" = "The device has been added successfully";

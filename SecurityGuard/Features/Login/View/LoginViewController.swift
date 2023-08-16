@@ -14,6 +14,11 @@ class LoginViewController: UIViewController {
     
     var loginViewModel = LoginViewModel()
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -50,7 +55,16 @@ class LoginViewController: UIViewController {
             
             let user = User(username: usernameTextField.text!, password: passwordTextField.text!)
             if loginViewModel.register(user: user) {
-                AlertController.shared.present(in: self, message: "user regisered succefully ;)")
+                if let _ = user.devices {
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let controller = storyboard.instantiateViewController(withIdentifier: "HomeViewController")
+                    self.navigationController?.pushViewController(controller, animated: true)
+                }
+                else {
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let controller = storyboard.instantiateViewController(withIdentifier: "AddDeviceViewController")
+                    self.navigationController?.pushViewController(controller, animated: true)
+                }
             }
             
         }
@@ -62,7 +76,17 @@ class LoginViewController: UIViewController {
                 return
             }
             else {
-                AlertController.shared.present(in: self, message: "Congurajulation!")
+                
+                if let _ = loginViewModel.user?.devices {
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let controller = storyboard.instantiateViewController(withIdentifier: "HomeViewController")
+                    self.navigationController?.pushViewController(controller, animated: true)
+                }
+                else {
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let controller = storyboard.instantiateViewController(withIdentifier: "AddDeviceViewController")
+                    self.navigationController?.pushViewController(controller, animated: true)
+                }
             }
         }
     }

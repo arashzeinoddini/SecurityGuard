@@ -20,3 +20,6 @@
 "Enter username and password" = "نام کاربری و رمز عبور را وارد کنید";
 "Authetication failed" = "احراز هویت با خطا مواجه شد";
 "Plese set username and password first" = "لطفا ابتدا نام کاربری و رمز عبور را مشخص نمایید";
+"User is not exist" = "کاربر وجود ندارد";
+"Fill all items" = "تمام موارد را وارد کنید";
+"The device has been added successfully" = "دستگاه با موفقیت اضافه شد";

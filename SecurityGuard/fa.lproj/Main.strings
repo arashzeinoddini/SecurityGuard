@@ -8,5 +8,23 @@
 /* Class = "UIButton"; normalTitle = "ورود"; ObjectID = "CB4-CN-F42"; */
 "CB4-CN-F42.normalTitle" = "ورود";
 
-/* Class = "UILabel"; text = "LOGIN TO SYSTEM"; ObjectID = "CEQ-re-gFf"; */
-"CEQ-re-gFf.text" = "ورود کاربر به برنامه";
+/* Class = "UILabel"; text = "ورود به برنامه"; ObjectID = "CEQ-re-gFf"; */
+"CEQ-re-gFf.text" = "ورود به برنامه";
+
+/* Class = "UIButton"; normalTitle = "   ذخیره"; ObjectID = "Q0H-aF-w94"; */
+"Q0H-aF-w94.normalTitle" = "   ذخیره";
+
+/* Class = "UILabel"; text = "افزودن دستگاه"; ObjectID = "hto-Jd-k5v"; */
+"hto-Jd-k5v.text" = "افزودن دستگاه";
+
+/* Class = "UITextField"; placeholder = "شماره تلفن دستگاه"; ObjectID = "pcj-1g-ijP"; */
+"pcj-1g-ijP.placeholder" = "شماره تلفن دستگاه";
+
+/* Class = "UITextField"; placeholder = "رمز دستگاه"; ObjectID = "sjC-bN-TWV"; */
+"sjC-bN-TWV.placeholder" = "رمز دستگاه";
+
+/* Class = "UITextField"; placeholder = "نام دستگاه"; ObjectID = "taU-um-NzM"; */
+"taU-um-NzM.placeholder" = "نام دستگاه";
+
+/* Class = "UITextField"; placeholder = "توضیحات"; ObjectID = "wJs-Eg-xj6"; */
+"wJs-Eg-xj6.placeholder" = "توضیحات";

@@ -14,6 +14,12 @@
 		F15B299E2A83D9BA005B5C1A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15B299D2A83D9BA005B5C1A /* LoginViewModel.swift */; };
 		F15B29A12A83DAB4005B5C1A /* UserDefaultExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15B29A02A83DAB4005B5C1A /* UserDefaultExtensions.swift */; };
 		F15B29A52A83DEA4005B5C1A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F15B29A72A83DEA4005B5C1A /* Localizable.strings */; };
+		F19334542A8CA9D00011403C /* AddDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19334532A8CA9D00011403C /* AddDeviceViewController.swift */; };
+		F19334572A8CA9ED0011403C /* AddDeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19334562A8CA9ED0011403C /* AddDeviceViewModel.swift */; };
+		F193345A2A8CAAB80011403C /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19334592A8CAAB80011403C /* Device.swift */; };
+		F193345C2A8CB33F0011403C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F193345B2A8CB33F0011403C /* Colors.xcassets */; };
+		F193345F2A8CB3DB0011403C /* B Yekan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F193345E2A8CB3DB0011403C /* B Yekan.ttf */; };
+		F19334662A8CF4340011403C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19334652A8CF4340011403C /* HomeViewController.swift */; };
 		F1A118472A80D44C00BE2349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A118462A80D44C00BE2349 /* AppDelegate.swift */; };
 		F1A118492A80D44C00BE2349 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A118482A80D44C00BE2349 /* SceneDelegate.swift */; };
 		F1A1184E2A80D44C00BE2349 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A1184C2A80D44C00BE2349 /* Main.storyboard */; };
@@ -33,6 +39,14 @@
 		F15B29A02A83DAB4005B5C1A /* UserDefaultExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultExtensions.swift; sourceTree = "<group>"; };
 		F15B29A62A83DEA4005B5C1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F15B29A82A83DF25005B5C1A /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F19334532A8CA9D00011403C /* AddDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeviceViewController.swift; sourceTree = "<group>"; };
+		F19334562A8CA9ED0011403C /* AddDeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeviceViewModel.swift; sourceTree = "<group>"; };
+		F19334592A8CAAB80011403C /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		F193345B2A8CB33F0011403C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		F193345E2A8CB3DB0011403C /* B Yekan.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "B Yekan.ttf"; sourceTree = "<group>"; };
+		F19334612A8CEB620011403C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		F19334632A8CEB640011403C /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/Main.strings; sourceTree = "<group>"; };
+		F19334652A8CF4340011403C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F1A118432A80D44C00BE2349 /* SecurityGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecurityGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A118462A80D44C00BE2349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1A118482A80D44C00BE2349 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,8 +56,6 @@
 		F1A118542A80D44D00BE2349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1A1185E2A80DB8200BE2349 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F1A118622A80E47300BE2349 /* PaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedTextField.swift; sourceTree = "<group>"; };
-		F1CE18912A843912001FF429 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		F1CE18932A843913001FF429 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/Main.strings; sourceTree = "<group>"; };
 		F2BE9F37A7F15DF71FAE2A7A /* Pods-SecurityGuard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecurityGuard.release.xcconfig"; path = "Target Support Files/Pods-SecurityGuard/Pods-SecurityGuard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,8 +124,51 @@
 		F182DAC02A8CA6730097AC01 /* Add Device */ = {
 			isa = PBXGroup;
 			children = (
+				F19334582A8CAAA60011403C /* Model */,
+				F19334552A8CA9D40011403C /* ViewModel */,
+				F19334522A8CA9B80011403C /* View */,
 			);
 			path = "Add Device";
+			sourceTree = "<group>";
+		};
+		F19334522A8CA9B80011403C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F19334532A8CA9D00011403C /* AddDeviceViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F19334552A8CA9D40011403C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F19334562A8CA9ED0011403C /* AddDeviceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F19334582A8CAAA60011403C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F19334592A8CAAB80011403C /* Device.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F193345D2A8CB3D00011403C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F193345E2A8CB3DB0011403C /* B Yekan.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F19334642A8CF4140011403C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F19334652A8CF4340011403C /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		F1A1183A2A80D44C00BE2349 = {
@@ -146,8 +201,10 @@
 				F1A118482A80D44C00BE2349 /* SceneDelegate.swift */,
 				F1A1184C2A80D44C00BE2349 /* Main.storyboard */,
 				F1A1184F2A80D44D00BE2349 /* Assets.xcassets */,
+				F193345B2A8CB33F0011403C /* Colors.xcassets */,
 				F1A118512A80D44D00BE2349 /* LaunchScreen.storyboard */,
 				F1A118542A80D44D00BE2349 /* Info.plist */,
+				F193345D2A8CB3D00011403C /* Fonts */,
 			);
 			path = SecurityGuard;
 			sourceTree = "<group>";
@@ -155,6 +212,7 @@
 		F1A1185A2A80DB5F00BE2349 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				F19334642A8CF4140011403C /* Home */,
 				F182DAC02A8CA6730097AC01 /* Add Device */,
 				F1A1185B2A80DB6900BE2349 /* Login */,
 			);
@@ -264,7 +322,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F193345C2A8CB33F0011403C /* Colors.xcassets in Resources */,
 				F1A118532A80D44D00BE2349 /* LaunchScreen.storyboard in Resources */,
+				F193345F2A8CB3DB0011403C /* B Yekan.ttf in Resources */,
 				F15B29A52A83DEA4005B5C1A /* Localizable.strings in Resources */,
 				F1A118502A80D44D00BE2349 /* Assets.xcassets in Resources */,
 				F1A1184E2A80D44C00BE2349 /* Main.storyboard in Resources */,
@@ -322,12 +382,16 @@
 			files = (
 				F15B299E2A83D9BA005B5C1A /* LoginViewModel.swift in Sources */,
 				F15AD2DC2A84D1D90082331F /* AuthManager.swift in Sources */,
+				F19334572A8CA9ED0011403C /* AddDeviceViewModel.swift in Sources */,
+				F193345A2A8CAAB80011403C /* Device.swift in Sources */,
 				F1A1185F2A80DB8200BE2349 /* LoginViewController.swift in Sources */,
 				F15B29A12A83DAB4005B5C1A /* UserDefaultExtensions.swift in Sources */,
+				F19334542A8CA9D00011403C /* AddDeviceViewController.swift in Sources */,
 				F1A118632A80E47300BE2349 /* PaddedTextField.swift in Sources */,
 				F15AD2DA2A84BC650082331F /* AlertController.swift in Sources */,
 				F15B299C2A83D970005B5C1A /* User.swift in Sources */,
 				F1A118472A80D44C00BE2349 /* AppDelegate.swift in Sources */,
+				F19334662A8CF4340011403C /* HomeViewController.swift in Sources */,
 				F1A118492A80D44C00BE2349 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,8 +412,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				F1A1184D2A80D44C00BE2349 /* Base */,
-				F1CE18912A843912001FF429 /* en */,
-				F1CE18932A843913001FF429 /* fa */,
+				F19334612A8CEB620011403C /* en */,
+				F19334632A8CEB640011403C /* fa */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

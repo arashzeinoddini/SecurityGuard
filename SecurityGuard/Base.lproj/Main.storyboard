@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Kt-wh-NXS">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="B Yekan.ttf">
+            <string>BYekan</string>
+        </array>
+    </customFonts>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hTz-oL-CgQ">
+            <objects>
+                <navigationController id="3Kt-wh-NXS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="75h-xR-RFk">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="iEq-J5-Ks7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oBJ-to-H8K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1015" y="-71"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -33,12 +55,12 @@
                                             <outletCollection property="gestureRecognizers" destination="vuX-kS-TBe" appends="YES" id="uHV-XZ-HO3"/>
                                         </connections>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN TO SYSTEM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEQ-re-gFf">
-                                        <rect key="frame" x="123" y="274" width="147" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ورود به برنامه" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEQ-re-gFf">
+                                        <rect key="frame" x="144.66666666666666" y="274" width="104" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Qlg-kK-elH"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="20"/>
                                         <color key="textColor" red="0.92549019610000005" green="0.82745098039999998" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <userDefinedRuntimeAttributes>
@@ -50,7 +72,7 @@
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="نام کاربری را وارد کنید" textAlignment="natural" minimumFontSize="17" background="Textfield_White_Background" translatesAutoresizingMaskIntoConstraints="NO" id="8mH-Lb-9eU" customClass="PaddedTextField" customModule="SecurityGuard" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="310" height="47.666666666666664"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
@@ -64,7 +86,7 @@
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="رمز عبور را وارد کنید" textAlignment="natural" minimumFontSize="17" background="Textfield_White_Background" translatesAutoresizingMaskIntoConstraints="NO" id="A5O-is-aBN" customClass="PaddedTextField" customModule="SecurityGuard" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="62.666666666666686" width="310" height="47.333333333333343"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
@@ -87,7 +109,8 @@
                                             <constraint firstAttribute="height" constant="50" id="Jkd-L3-FwZ"/>
                                             <constraint firstAttribute="width" constant="310" id="c1m-2V-Hwa"/>
                                         </constraints>
-                                        <state key="normal" title="ورود" backgroundImage="Orange_Wide_But">
+                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                        <state key="normal" title="ورود" backgroundImage="OrangeButtonBackground">
                                             <color key="titleColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -137,6 +160,7 @@
                             <constraint firstItem="XIu-2j-ZrI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xO2-4Y-kA8"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="LHM-Ii-5cb"/>
                     <connections>
                         <outlet property="passwordTextField" destination="A5O-is-aBN" id="2wQ-xW-GkE"/>
                         <outlet property="usernameTextField" destination="8mH-Lb-9eU" id="GS9-7e-isB"/>
@@ -154,22 +178,198 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3.8167938931297707" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="-68" y="-71"/>
+        </scene>
+        <!--Add Device View Controller-->
+        <scene sceneID="5YU-aA-95V">
+            <objects>
+                <viewController storyboardIdentifier="AddDeviceViewController" id="EOD-ze-qfe" customClass="AddDeviceViewController" customModule="SecurityGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fB7-dG-CRm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="MainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Rt0-xh-XxX">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="افزودن دستگاه" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hto-Jd-k5v">
+                                <rect key="frame" x="20" y="79" width="353" height="20"/>
+                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="20"/>
+                                <color key="textColor" name="Text"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vk9-pk-gFN">
+                                <rect key="frame" x="20" y="139" width="353" height="330"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="BigBackground" translatesAutoresizingMaskIntoConstraints="NO" id="6ht-Vt-dZS">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="330"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eGu-OG-QR6">
+                                        <rect key="frame" x="16" y="20" width="321" height="220"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="نام دستگاه" textAlignment="natural" minimumFontSize="17" background="TextFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="taU-um-NzM" customClass="PaddedTextField" customModule="SecurityGuard" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="321" height="49"/>
+                                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="توضیحات" textAlignment="natural" minimumFontSize="17" background="TextFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="wJs-Eg-xj6" customClass="PaddedTextField" customModule="SecurityGuard" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="57" width="321" height="49"/>
+                                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="شماره تلفن دستگاه" textAlignment="natural" minimumFontSize="17" background="TextFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="pcj-1g-ijP" customClass="PaddedTextField" customModule="SecurityGuard" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="114" width="321" height="49"/>
+                                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="رمز دستگاه" textAlignment="natural" minimumFontSize="17" background="TextFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="sjC-bN-TWV" customClass="PaddedTextField" customModule="SecurityGuard" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="171" width="321" height="49"/>
+                                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0H-aF-w94">
+                                        <rect key="frame" x="16" y="260" width="321" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="6tC-or-6l7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="   ذخیره" image="Tick" backgroundImage="ButtonBackground">
+                                            <color key="titleColor" name="ButtonSaveText"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addDeviceTapped" destination="EOD-ze-qfe" eventType="touchUpInside" id="hcg-92-j7c"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="eGu-OG-QR6" firstAttribute="top" secondItem="vk9-pk-gFN" secondAttribute="top" constant="20" id="12i-Tx-xIR"/>
+                                    <constraint firstItem="Q0H-aF-w94" firstAttribute="trailing" secondItem="eGu-OG-QR6" secondAttribute="trailing" id="2cW-P3-Iac"/>
+                                    <constraint firstAttribute="trailing" secondItem="eGu-OG-QR6" secondAttribute="trailing" constant="16" id="Aw7-ES-zSU"/>
+                                    <constraint firstAttribute="height" constant="330" id="Br0-TK-vmn"/>
+                                    <constraint firstItem="6ht-Vt-dZS" firstAttribute="top" secondItem="vk9-pk-gFN" secondAttribute="top" id="GAZ-aq-5Fv"/>
+                                    <constraint firstItem="eGu-OG-QR6" firstAttribute="leading" secondItem="vk9-pk-gFN" secondAttribute="leading" constant="16" id="JS8-Ke-6nu"/>
+                                    <constraint firstAttribute="bottom" secondItem="6ht-Vt-dZS" secondAttribute="bottom" id="Jed-71-mJo"/>
+                                    <constraint firstItem="Q0H-aF-w94" firstAttribute="top" secondItem="eGu-OG-QR6" secondAttribute="bottom" constant="20" id="NHb-7M-9AK"/>
+                                    <constraint firstAttribute="trailing" secondItem="6ht-Vt-dZS" secondAttribute="trailing" id="QR5-tQ-eOx"/>
+                                    <constraint firstItem="6ht-Vt-dZS" firstAttribute="leading" secondItem="vk9-pk-gFN" secondAttribute="leading" id="QiV-Dm-uzG"/>
+                                    <constraint firstAttribute="bottom" secondItem="Q0H-aF-w94" secondAttribute="bottom" constant="20" id="mc2-hS-Xlw"/>
+                                    <constraint firstItem="Q0H-aF-w94" firstAttribute="leading" secondItem="eGu-OG-QR6" secondAttribute="leading" id="uOJ-mr-9Dj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BEx-rM-1xM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BEx-rM-1xM" firstAttribute="trailing" secondItem="vk9-pk-gFN" secondAttribute="trailing" constant="20" id="4pw-08-dfc"/>
+                            <constraint firstAttribute="trailing" secondItem="Rt0-xh-XxX" secondAttribute="trailing" id="6jO-fq-3sK"/>
+                            <constraint firstItem="hto-Jd-k5v" firstAttribute="leading" secondItem="BEx-rM-1xM" secondAttribute="leading" constant="20" id="JlH-t7-9wT"/>
+                            <constraint firstItem="hto-Jd-k5v" firstAttribute="top" secondItem="BEx-rM-1xM" secondAttribute="top" constant="20" id="Ouk-TQ-Gfr"/>
+                            <constraint firstItem="vk9-pk-gFN" firstAttribute="leading" secondItem="BEx-rM-1xM" secondAttribute="leading" constant="20" id="SGd-Gs-7TH"/>
+                            <constraint firstItem="Rt0-xh-XxX" firstAttribute="leading" secondItem="fB7-dG-CRm" secondAttribute="leading" id="Wzh-nV-sBh"/>
+                            <constraint firstItem="vk9-pk-gFN" firstAttribute="top" secondItem="hto-Jd-k5v" secondAttribute="bottom" constant="40" id="kUn-qn-U6X"/>
+                            <constraint firstItem="Rt0-xh-XxX" firstAttribute="top" secondItem="fB7-dG-CRm" secondAttribute="top" id="lAv-ak-T0J"/>
+                            <constraint firstAttribute="bottom" secondItem="Rt0-xh-XxX" secondAttribute="bottom" id="sTK-pK-gxP"/>
+                            <constraint firstItem="BEx-rM-1xM" firstAttribute="trailing" secondItem="hto-Jd-k5v" secondAttribute="trailing" constant="20" id="sxz-cP-2vt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descTextField" destination="wJs-Eg-xj6" id="1ln-W5-8jp"/>
+                        <outlet property="nameTextField" destination="taU-um-NzM" id="hF4-mN-Tf1"/>
+                        <outlet property="passwordTextField" destination="sjC-bN-TWV" id="qtB-Kc-0aA"/>
+                        <outlet property="phoneNumberTextField" destination="pcj-1g-ijP" id="DAI-iy-gNX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8YH-rp-Scj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879" y="-71"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="QPQ-kb-X9d">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="fzy-HJ-V7y" customClass="HomeViewController" customModule="SecurityGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fFV-U4-fll">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="iFM-LP-Qhi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zlM-iT-zlG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1894" y="-82"/>
         </scene>
     </scenes>
     <designables>
         <designable name="8mH-Lb-9eU">
-            <size key="intrinsicContentSize" width="141.33333333333334" height="22.666666666666668"/>
+            <size key="intrinsicContentSize" width="151" height="20.666666666666668"/>
         </designable>
         <designable name="A5O-is-aBN">
-            <size key="intrinsicContentSize" width="133" height="21"/>
+            <size key="intrinsicContentSize" width="142" height="19"/>
+        </designable>
+        <designable name="pcj-1g-ijP">
+            <size key="intrinsicContentSize" width="130" height="20.666666666666668"/>
+        </designable>
+        <designable name="sjC-bN-TWV">
+            <size key="intrinsicContentSize" width="87" height="19"/>
+        </designable>
+        <designable name="taU-um-NzM">
+            <size key="intrinsicContentSize" width="84" height="20.666666666666668"/>
+        </designable>
+        <designable name="wJs-Eg-xj6">
+            <size key="intrinsicContentSize" width="75.666666666666671" height="20.666666666666668"/>
         </designable>
     </designables>
     <resources>
+        <image name="BigBackground" width="498.5" height="489.5"/>
+        <image name="ButtonBackground" width="452.5" height="68.5"/>
         <image name="Dark_Background" width="414" height="736"/>
         <image name="Finger_Print_Icon" width="174" height="204"/>
-        <image name="Orange_Wide_But" width="299.5" height="57"/>
+        <image name="MainBackground" width="540" height="960"/>
+        <image name="OrangeButtonBackground" width="299.5" height="57"/>
+        <image name="TextFieldBackground" width="457.5" height="80.5"/>
         <image name="Textfield_White_Background" width="304" height="61.5"/>
+        <image name="Tick" width="36" height="36.5"/>
+        <namedColor name="ButtonSaveText">
+            <color red="0.37647058823529411" green="0.60784313725490191" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
