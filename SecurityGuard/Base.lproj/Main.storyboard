@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="SecurityGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="Dark_Background" translatesAutoresizingMaskIntoConstraints="NO" id="XIu-2j-ZrI">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkk-wX-eBR">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Finger_Print_Icon" translatesAutoresizingMaskIntoConstraints="NO" id="vBv-tN-RSP">
+                                        <rect key="frame" x="109.66666666666669" y="70" width="174" height="204"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="vBv-tN-RSP" secondAttribute="height" multiplier="29:34" id="TNK-xS-3t0"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="vuX-kS-TBe" appends="YES" id="uHV-XZ-HO3"/>
+                                        </connections>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN TO SYSTEM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEQ-re-gFf">
+                                        <rect key="frame" x="123" y="274" width="147" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Qlg-kK-elH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.92549019610000005" green="0.82745098039999998" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Login to system"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="VAL-UK-9EX">
+                                        <rect key="frame" x="41.666666666666657" y="344" width="310" height="110"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="نام کاربری را وارد کنید" textAlignment="natural" minimumFontSize="17" background="Textfield_White_Background" translatesAutoresizingMaskIntoConstraints="NO" id="8mH-Lb-9eU" customClass="PaddedTextField" customModule="SecurityGuard" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="310" height="47.666666666666664"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Set username"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="رمز عبور را وارد کنید" textAlignment="natural" minimumFontSize="17" background="Textfield_White_Background" translatesAutoresizingMaskIntoConstraints="NO" id="A5O-is-aBN" customClass="PaddedTextField" customModule="SecurityGuard" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="62.666666666666686" width="310" height="47.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Set password"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="iBI-kq-gu7"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CB4-CN-F42">
+                                        <rect key="frame" x="41.666666666666657" y="494" width="310" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Jkd-L3-FwZ"/>
+                                            <constraint firstAttribute="width" constant="310" id="c1m-2V-Hwa"/>
+                                        </constraints>
+                                        <state key="normal" title="ورود" backgroundImage="Orange_Wide_But">
+                                            <color key="titleColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Login"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginViaUserTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="rBC-Xl-sYI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="VAL-UK-9EX" firstAttribute="trailing" secondItem="CB4-CN-F42" secondAttribute="trailing" id="00h-kf-h0z"/>
+                                    <constraint firstItem="VAL-UK-9EX" firstAttribute="top" secondItem="CEQ-re-gFf" secondAttribute="bottom" constant="40" id="1y6-oA-fgP"/>
+                                    <constraint firstItem="CEQ-re-gFf" firstAttribute="centerX" secondItem="xkk-wX-eBR" secondAttribute="centerX" id="H1t-Vo-BZi"/>
+                                    <constraint firstItem="VAL-UK-9EX" firstAttribute="leading" secondItem="CB4-CN-F42" secondAttribute="leading" id="H9m-Ou-8wr"/>
+                                    <constraint firstItem="CB4-CN-F42" firstAttribute="centerX" secondItem="xkk-wX-eBR" secondAttribute="centerX" id="Laa-A4-pab"/>
+                                    <constraint firstItem="vBv-tN-RSP" firstAttribute="topMargin" secondItem="xkk-wX-eBR" secondAttribute="topMargin" multiplier="11" id="QkI-nZ-jAs"/>
+                                    <constraint firstItem="vBv-tN-RSP" firstAttribute="top" secondItem="xkk-wX-eBR" secondAttribute="top" constant="70" id="Tbx-NB-PYP"/>
+                                    <constraint firstItem="CEQ-re-gFf" firstAttribute="top" secondItem="vBv-tN-RSP" secondAttribute="bottom" id="dMU-xa-QJz"/>
+                                    <constraint firstItem="CB4-CN-F42" firstAttribute="top" secondItem="VAL-UK-9EX" secondAttribute="bottom" constant="40" id="nS1-Yj-d5B"/>
+                                    <constraint firstItem="vBv-tN-RSP" firstAttribute="top" secondItem="xkk-wX-eBR" secondAttribute="top" constant="100" id="vB8-f4-TJS"/>
+                                    <constraint firstItem="vBv-tN-RSP" firstAttribute="centerX" secondItem="xkk-wX-eBR" secondAttribute="centerX" id="zSu-9n-LrD"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QkI-nZ-jAs"/>
+                                        <exclude reference="vB8-f4-TJS"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Cv6-57-S1H" appends="YES" id="LIi-gF-Vs7"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xkk-wX-eBR" secondAttribute="trailing" id="4vW-t2-Cqs"/>
+                            <constraint firstItem="xkk-wX-eBR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ivc-SX-eum"/>
+                            <constraint firstItem="xkk-wX-eBR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QTC-L4-jCC"/>
+                            <constraint firstItem="xkk-wX-eBR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="VVb-L6-yXW"/>
+                            <constraint firstAttribute="trailing" secondItem="XIu-2j-ZrI" secondAttribute="trailing" id="biL-HA-VTF"/>
+                            <constraint firstItem="XIu-2j-ZrI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eD1-hz-LTc"/>
+                            <constraint firstAttribute="bottom" secondItem="XIu-2j-ZrI" secondAttribute="bottom" id="wea-Re-vlJ"/>
+                            <constraint firstItem="XIu-2j-ZrI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xO2-4Y-kA8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="A5O-is-aBN" id="2wQ-xW-GkE"/>
+                        <outlet property="usernameTextField" destination="8mH-Lb-9eU" id="GS9-7e-isB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vuX-kS-TBe">
+                    <connections>
+                        <action selector="loginViaFaceIDTapped" destination="BYZ-38-t0r" id="HJs-yC-byg"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Cv6-57-S1H">
+                    <connections>
+                        <action selector="dismissKeyboard" destination="BYZ-38-t0r" id="kMl-Dg-9TX"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3.8167938931297707" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="8mH-Lb-9eU">
+            <size key="intrinsicContentSize" width="141.33333333333334" height="22.666666666666668"/>
+        </designable>
+        <designable name="A5O-is-aBN">
+            <size key="intrinsicContentSize" width="133" height="21"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Dark_Background" width="414" height="736"/>
+        <image name="Finger_Print_Icon" width="174" height="204"/>
+        <image name="Orange_Wide_But" width="299.5" height="57"/>
+        <image name="Textfield_White_Background" width="304" height="61.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

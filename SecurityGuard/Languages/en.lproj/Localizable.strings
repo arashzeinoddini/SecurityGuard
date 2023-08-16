@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  SecurityGuard
+
+  Created by Arash Zeinoddini on 8/9/23.
+  
+*/
+
+"Enter username" = "Enter username";
+"Enter password" = "Enter password";
+"Set username" = "Set username";
+"Set password" = "Set password";
+"Username and password should be bigger than %i characters" = "Username and password should be bigger than %i characters";
+"OK" = "OK";
+"Alert" = "Alert";
+"User is not registered" = "User is not registered";
+"Username or password is not correct" = "Username or password is not correct";
+"Enter username and password" = "Enter username and password";
+"Authetication failed" = "Authetication failed";
+"Plese set username and password first" = "Plese set username and password first";

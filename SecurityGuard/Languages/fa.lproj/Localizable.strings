@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  SecurityGuard
+
+  Created by Arash Zeinoddini on 8/9/23.
+  
+*/
+
+"Enter username" = "نام کاربری را وارد کنید";
+"Enter password" = "رمز عبور را وارد کنید";
+"Set username" = "نام کاربری را مشخص کنید";
+"Set password" = "رمز عبور را مشخص کنید";
+"Login to system" = "ورود به برنامه";
+"Login" = "ورود";
+"Username and password should be bigger than %i characters" = "نام کاربری و رمز عبور باید بزرگتر از %i حرف باشند";
+"OK" = "تایید";
+"Alert" = "هشدار";
+"User is not registered" = "کاربر ثبت نام نشده است";
+"Username or password is not correct" = "نام کاربری یا رمز عبور اشتباه است";
+"Enter username and password" = "نام کاربری و رمز عبور را وارد کنید";
+"Authetication failed" = "احراز هویت با خطا مواجه شد";
+"Plese set username and password first" = "لطفا ابتدا نام کاربری و رمز عبور را مشخص نمایید";

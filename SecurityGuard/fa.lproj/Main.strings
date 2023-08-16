@@ -1,0 +1,12 @@
+
+/* Class = "UITextField"; placeholder = "نام کاربری را وارد کنید"; ObjectID = "8mH-Lb-9eU"; */
+"8mH-Lb-9eU.placeholder" = "نام کاربری را وارد کنید";
+
+/* Class = "UITextField"; placeholder = "رمز عبور را وارد کنید"; ObjectID = "A5O-is-aBN"; */
+"A5O-is-aBN.placeholder" = "رمز عبور را وارد کنید";
+
+/* Class = "UIButton"; normalTitle = "ورود"; ObjectID = "CB4-CN-F42"; */
+"CB4-CN-F42.normalTitle" = "ورود";
+
+/* Class = "UILabel"; text = "LOGIN TO SYSTEM"; ObjectID = "CEQ-re-gFf"; */
+"CEQ-re-gFf.text" = "ورود کاربر به برنامه";
