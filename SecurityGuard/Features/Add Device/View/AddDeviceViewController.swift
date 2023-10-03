@@ -23,17 +23,22 @@ class AddDeviceViewController: UIViewController {
     }
     
     @IBAction private func addDeviceTapped() {
-        let (_, error) = addDeviceViewModel.addDevice(name: nameTextField.text, desc: descTextField.text, phoneNumber: phoneNumberTextField.text, password: passwordTextField.text)
+        
+        let error = addDeviceViewModel.addDevice(name: nameTextField.text, desc: descTextField.text, phoneNumber: phoneNumberTextField.text, password: passwordTextField.text)
         guard error  == nil else {
             AlertController.shared.present(in: self, message: error ?? "")
             return
         }
         
-        AlertController.shared.present(in: self, message: "The device has been added successfully") {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let controller = storyboard.instantiateViewController(withIdentifier: "HomeViewController")
-            self.navigationController?.pushViewController(controller, animated: true)
+        if User.getUser()?.selectedDevice == nil {
+            var user = User.getUser()
+            user?.selectedDevice = Device(name: nameTextField.text, desc: descTextField.text, phoneNumber: phoneNumberTextField.text, password: passwordTextField.text)
+            User.register(user: user!)
         }
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "TabBarController")
+        self.navigationController?.pushViewController(controller, animated: true)
     }
 
     /*

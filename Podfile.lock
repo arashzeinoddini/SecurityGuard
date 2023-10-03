@@ -5,17 +5,21 @@ PODS:
   - Localize-Swift/LocalizeSwiftCore (3.2.0)
   - Localize-Swift/UIKit (3.2.0):
     - Localize-Swift/LocalizeSwiftCore
+  - Presentr (1.9)
 
 DEPENDENCIES:
   - Localize-Swift
+  - Presentr
 
 SPEC REPOS:
   trunk:
     - Localize-Swift
+    - Presentr
 
 SPEC CHECKSUMS:
   Localize-Swift: 6f4475136bdb0d7b2882ea3d4ea919d70142b232
+  Presentr: 7078d7eb5d1661ebeaae60c9e42a1e534de1b993
 
-PODFILE CHECKSUM: 535f54cff1fe164dd33b93ad2383b76902bf02fc
+PODFILE CHECKSUM: f2650f2daa6c939c8528c77aa761a249591f398b
 
 COCOAPODS: 1.12.1

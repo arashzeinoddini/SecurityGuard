@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Kt-wh-NXS">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Kt-wh-NXS">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +21,7 @@
             <objects>
                 <navigationController id="3Kt-wh-NXS" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="75h-xR-RFk">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="50" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -36,17 +37,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="SecurityGuard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="Dark_Background" translatesAutoresizingMaskIntoConstraints="NO" id="XIu-2j-ZrI">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkk-wX-eBR">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Finger_Print_Icon" translatesAutoresizingMaskIntoConstraints="NO" id="vBv-tN-RSP">
-                                        <rect key="frame" x="109.66666666666669" y="70" width="174" height="204"/>
+                                        <rect key="frame" x="100.66666666666669" y="70" width="174" height="204"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="vBv-tN-RSP" secondAttribute="height" multiplier="29:34" id="TNK-xS-3t0"/>
@@ -56,7 +57,7 @@
                                         </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ورود به برنامه" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEQ-re-gFf">
-                                        <rect key="frame" x="144.66666666666666" y="274" width="104" height="30"/>
+                                        <rect key="frame" x="135.66666666666666" y="274" width="104" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Qlg-kK-elH"/>
                                         </constraints>
@@ -68,7 +69,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="VAL-UK-9EX">
-                                        <rect key="frame" x="41.666666666666657" y="344" width="310" height="110"/>
+                                        <rect key="frame" x="32.666666666666657" y="344" width="310" height="110"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="نام کاربری را وارد کنید" textAlignment="natural" minimumFontSize="17" background="Textfield_White_Background" translatesAutoresizingMaskIntoConstraints="NO" id="8mH-Lb-9eU" customClass="PaddedTextField" customModule="SecurityGuard" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="310" height="47.666666666666664"/>
@@ -104,7 +105,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CB4-CN-F42">
-                                        <rect key="frame" x="41.666666666666657" y="494" width="310" height="50"/>
+                                        <rect key="frame" x="32.666666666666657" y="494" width="310" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Jkd-L3-FwZ"/>
                                             <constraint firstAttribute="width" constant="310" id="c1m-2V-Hwa"/>
@@ -185,29 +186,29 @@
             <objects>
                 <viewController storyboardIdentifier="AddDeviceViewController" id="EOD-ze-qfe" customClass="AddDeviceViewController" customModule="SecurityGuard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fB7-dG-CRm">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="MainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Rt0-xh-XxX">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="افزودن دستگاه" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hto-Jd-k5v">
-                                <rect key="frame" x="20" y="79" width="353" height="20"/>
+                                <rect key="frame" x="20" y="70" width="335" height="20"/>
                                 <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="20"/>
                                 <color key="textColor" name="Text"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vk9-pk-gFN">
-                                <rect key="frame" x="20" y="139" width="353" height="330"/>
+                                <rect key="frame" x="20" y="130" width="335" height="330"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="BigBackground" translatesAutoresizingMaskIntoConstraints="NO" id="6ht-Vt-dZS">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="330"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="330"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eGu-OG-QR6">
-                                        <rect key="frame" x="16" y="20" width="321" height="220"/>
+                                        <rect key="frame" x="16" y="20" width="303" height="220"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="نام دستگاه" textAlignment="natural" minimumFontSize="17" background="TextFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="taU-um-NzM" customClass="PaddedTextField" customModule="SecurityGuard" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="321" height="49"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="303" height="49"/>
                                                 <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
@@ -220,7 +221,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="توضیحات" textAlignment="natural" minimumFontSize="17" background="TextFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="wJs-Eg-xj6" customClass="PaddedTextField" customModule="SecurityGuard" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="57" width="321" height="49"/>
+                                                <rect key="frame" x="0.0" y="57" width="303" height="49"/>
                                                 <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
@@ -233,7 +234,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="شماره تلفن دستگاه" textAlignment="natural" minimumFontSize="17" background="TextFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="pcj-1g-ijP" customClass="PaddedTextField" customModule="SecurityGuard" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="114" width="321" height="49"/>
+                                                <rect key="frame" x="0.0" y="114" width="303" height="49"/>
                                                 <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                 <userDefinedRuntimeAttributes>
@@ -246,7 +247,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="رمز دستگاه" textAlignment="natural" minimumFontSize="17" background="TextFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="sjC-bN-TWV" customClass="PaddedTextField" customModule="SecurityGuard" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="171" width="321" height="49"/>
+                                                <rect key="frame" x="0.0" y="171" width="303" height="49"/>
                                                 <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 <userDefinedRuntimeAttributes>
@@ -261,7 +262,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0H-aF-w94">
-                                        <rect key="frame" x="16" y="260" width="321" height="50"/>
+                                        <rect key="frame" x="16" y="260" width="303" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="6tC-or-6l7"/>
                                         </constraints>
@@ -318,20 +319,891 @@
             </objects>
             <point key="canvasLocation" x="879" y="-71"/>
         </scene>
-        <!--Home View Controller-->
-        <scene sceneID="QPQ-kb-X9d">
+        <!--Tab Bar Controller-->
+        <scene sceneID="B6v-on-gnh">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="fzy-HJ-V7y" customClass="HomeViewController" customModule="SecurityGuard" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fFV-U4-fll">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="iFM-LP-Qhi"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zlM-iT-zlG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarController storyboardIdentifier="TabBarController" id="u2i-XZ-tBQ" customClass="TabBarController" customModule="SecurityGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HGy-uE-Gl3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" name="ButtonSaveText"/>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="initialIndex">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="oXx-Yh-Rk5" kind="relationship" relationship="viewControllers" id="fsj-SE-nH4"/>
+                        <segue destination="5SQ-eW-gHt" kind="relationship" relationship="viewControllers" id="iRj-q0-BtJ"/>
+                        <segue destination="CJJ-ED-i44" kind="relationship" relationship="viewControllers" id="gdF-uU-baw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tBV-5a-2Pv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1894" y="-82"/>
+            <point key="canvasLocation" x="1892" y="-71"/>
+        </scene>
+        <!--فعال سازی-->
+        <scene sceneID="vmB-KD-1Gj">
+            <objects>
+                <viewController id="oXx-Yh-Rk5" customClass="ActivationViewController" customModule="SecurityGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6HJ-Tr-6FG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="MainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Ctx-gb-4dn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s79-76-9BQ">
+                                <rect key="frame" x="87.666666666666686" y="80" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="c8j-8n-2Fj"/>
+                                    <constraint firstAttribute="width" constant="200" id="wEv-TI-9J0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="    دستگاه تست" image="Menu" backgroundImage="ButtonBackground">
+                                    <color key="titleColor" name="ButtonSaveText"/>
+                                </state>
+                                <connections>
+                                    <action selector="addDeviceTapped" destination="EOD-ze-qfe" eventType="touchUpInside" id="FRc-xI-4Nf"/>
+                                    <action selector="deviceSelectorTapped" destination="oXx-Yh-Rk5" eventType="touchUpInside" id="mip-sz-gz7"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zLe-TX-lXH">
+                                <rect key="frame" x="10" y="180" width="355" height="349"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2nS-0t-YIU">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="103"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Vgi-E9-wNx">
+                                                <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="103"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="201" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0Z-Up-oBc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="77"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="Button"/>
+                                                        <connections>
+                                                            <action selector="inactiveTappedWithSender:" destination="oXx-Yh-Rk5" eventType="touchUpInside" id="VAe-CR-G1u"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="غیرفعال" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7a-pq-rQF">
+                                                        <rect key="frame" x="0.0" y="85" width="67.666666666666671" height="18"/>
+                                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                        <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Gf-7J-OHt">
+                                                <rect key="frame" x="77.666666666666686" y="0.0" width="200" height="103"/>
+                                                <subviews>
+                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyh-x5-5HO">
+                                                        <rect key="frame" x="0.0" y="11.666666666666654" width="200" height="53.666666666666657"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="cyh-x5-5HO" secondAttribute="height" multiplier="231:62" id="1Rv-Tn-1je"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="فعال/غیرفعال" backgroundImage="ButtonWide">
+                                                            <color key="titleColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="6ha-xn-Eld"/>
+                                                    <constraint firstItem="cyh-x5-5HO" firstAttribute="centerX" secondItem="9Gf-7J-OHt" secondAttribute="centerX" id="JHq-WR-VwM"/>
+                                                    <constraint firstItem="cyh-x5-5HO" firstAttribute="width" secondItem="9Gf-7J-OHt" secondAttribute="width" id="NYa-J7-iwi"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ifu-hN-yT4">
+                                                <rect key="frame" x="287.66666666666669" y="0.0" width="67.333333333333314" height="103"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsm-LY-Iay">
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.333333333333329" height="85"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="ButtonSelected"/>
+                                                        <connections>
+                                                            <action selector="activeTappedWithSender:" destination="oXx-Yh-Rk5" eventType="touchUpInside" id="zbj-lT-Jhz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="فعال" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0N-nC-5uq">
+                                                        <rect key="frame" x="0.0" y="85" width="67.333333333333329" height="18"/>
+                                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                        <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="cyh-x5-5HO" firstAttribute="centerY" secondItem="q0Z-Up-oBc" secondAttribute="centerY" id="TRB-oB-J7n"/>
+                                            <constraint firstItem="Vgi-E9-wNx" firstAttribute="width" secondItem="Ifu-hN-yT4" secondAttribute="width" id="Zgy-dS-VKY"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xrv-26-oQP">
+                                        <rect key="frame" x="0.0" y="123" width="355" height="103"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SOu-UT-bLo">
+                                                <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="103"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="202" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AS-h2-5Ob">
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="85"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="Button"/>
+                                                        <connections>
+                                                            <action selector="inactiveTappedWithSender:" destination="oXx-Yh-Rk5" eventType="touchUpInside" id="XVp-ti-gMe"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="غیرفعال" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWO-Nm-0lK">
+                                                        <rect key="frame" x="0.0" y="85" width="67.666666666666671" height="18"/>
+                                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                        <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kQX-wG-43X">
+                                                <rect key="frame" x="77.666666666666686" y="0.0" width="200" height="103"/>
+                                                <subviews>
+                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tq6-gK-uHU">
+                                                        <rect key="frame" x="0.0" y="15.666666666666682" width="200" height="53.666666666666657"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="tq6-gK-uHU" secondAttribute="height" multiplier="231:62" id="XhX-zU-qME"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="منطقه یک" backgroundImage="ButtonWide">
+                                                            <color key="titleColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="tq6-gK-uHU" firstAttribute="centerX" secondItem="kQX-wG-43X" secondAttribute="centerX" id="0oG-sF-8c8"/>
+                                                    <constraint firstItem="tq6-gK-uHU" firstAttribute="width" secondItem="kQX-wG-43X" secondAttribute="width" id="S85-NF-7eI"/>
+                                                    <constraint firstAttribute="width" constant="200" id="Yr6-iM-OB0"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="b0X-Q8-kl4">
+                                                <rect key="frame" x="287.66666666666669" y="0.0" width="67.333333333333314" height="103"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soX-1H-qd4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.333333333333329" height="85"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="ButtonSelected"/>
+                                                        <connections>
+                                                            <action selector="activeTappedWithSender:" destination="oXx-Yh-Rk5" eventType="touchUpInside" id="s2u-X9-XpU"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="فعال" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lnd-8c-ZJt">
+                                                        <rect key="frame" x="0.0" y="85" width="67.333333333333329" height="18"/>
+                                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                        <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="SOu-UT-bLo" firstAttribute="width" secondItem="b0X-Q8-kl4" secondAttribute="width" id="4F8-Nf-AlG"/>
+                                            <constraint firstItem="tq6-gK-uHU" firstAttribute="centerY" secondItem="5AS-h2-5Ob" secondAttribute="centerY" id="zRh-NM-vZg"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GSu-Th-Mcq">
+                                        <rect key="frame" x="0.0" y="246" width="355" height="103"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RQ0-RO-Jhy">
+                                                <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="103"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="203" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dO-7U-oGE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="85"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="Button"/>
+                                                        <connections>
+                                                            <action selector="inactiveTappedWithSender:" destination="oXx-Yh-Rk5" eventType="touchUpInside" id="e69-zB-efU"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="غیرفعال" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQr-FW-M3A">
+                                                        <rect key="frame" x="0.0" y="85" width="67.666666666666671" height="18"/>
+                                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                        <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQM-Yp-wOg">
+                                                <rect key="frame" x="77.666666666666686" y="0.0" width="200" height="103"/>
+                                                <subviews>
+                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdM-zp-9Uv">
+                                                        <rect key="frame" x="0.0" y="15.666666666666682" width="200" height="53.666666666666657"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="UdM-zp-9Uv" secondAttribute="height" multiplier="231:62" id="6ZG-ob-NeR"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="منطقه دو" backgroundImage="ButtonWide">
+                                                            <color key="titleColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="PGG-m5-UPX"/>
+                                                    <constraint firstItem="UdM-zp-9Uv" firstAttribute="width" secondItem="rQM-Yp-wOg" secondAttribute="width" id="Vtz-U8-ryb"/>
+                                                    <constraint firstItem="UdM-zp-9Uv" firstAttribute="centerX" secondItem="rQM-Yp-wOg" secondAttribute="centerX" id="hGY-7M-sFY"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2oX-lB-r5i">
+                                                <rect key="frame" x="287.66666666666669" y="0.0" width="67.333333333333314" height="103"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyT-UD-Gie">
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.333333333333329" height="85"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="ButtonSelected"/>
+                                                        <connections>
+                                                            <action selector="activeTappedWithSender:" destination="oXx-Yh-Rk5" eventType="touchUpInside" id="F7b-Bz-zJe"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="فعال" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyW-PQ-A6Z">
+                                                        <rect key="frame" x="0.0" y="85" width="67.333333333333329" height="18"/>
+                                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                        <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="RQ0-RO-Jhy" firstAttribute="width" secondItem="2oX-lB-r5i" secondAttribute="width" id="47V-My-5OS"/>
+                                            <constraint firstItem="UdM-zp-9Uv" firstAttribute="centerY" secondItem="8dO-7U-oGE" secondAttribute="centerY" id="99H-77-Vdf"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="84K-Yc-2vN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s79-76-9BQ" firstAttribute="centerX" secondItem="84K-Yc-2vN" secondAttribute="centerX" id="1S5-yA-OEG"/>
+                            <constraint firstItem="Ctx-gb-4dn" firstAttribute="top" secondItem="6HJ-Tr-6FG" secondAttribute="top" id="5gq-vp-FUo"/>
+                            <constraint firstItem="s79-76-9BQ" firstAttribute="top" secondItem="84K-Yc-2vN" secondAttribute="top" constant="30" id="U1i-3z-8Us"/>
+                            <constraint firstAttribute="trailing" secondItem="zLe-TX-lXH" secondAttribute="trailing" constant="10" id="WQ2-CQ-q13"/>
+                            <constraint firstAttribute="trailing" secondItem="Ctx-gb-4dn" secondAttribute="trailing" id="YGP-KV-baz"/>
+                            <constraint firstAttribute="bottom" secondItem="Ctx-gb-4dn" secondAttribute="bottom" id="ZNb-KQ-12V"/>
+                            <constraint firstItem="zLe-TX-lXH" firstAttribute="top" secondItem="s79-76-9BQ" secondAttribute="bottom" constant="50" id="lpw-9k-9AW"/>
+                            <constraint firstItem="zLe-TX-lXH" firstAttribute="leading" secondItem="84K-Yc-2vN" secondAttribute="leading" constant="10" id="qjR-0o-0T3"/>
+                            <constraint firstItem="Ctx-gb-4dn" firstAttribute="leading" secondItem="6HJ-Tr-6FG" secondAttribute="leading" id="sXN-HZ-ctE"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="فعال سازی" image="StateCheck" id="FSF-qW-jfX">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="2"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="deviceButton" destination="s79-76-9BQ" id="C2d-ya-MVK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DEl-dr-Sj9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3428" y="-896.30541871921184"/>
+        </scene>
+        <!--Device Selector View Controller-->
+        <scene sceneID="2oV-sU-7nI">
+            <objects>
+                <viewController storyboardIdentifier="DeviceSelectorViewController" id="dMu-QO-wUQ" customClass="DeviceSelectorViewController" customModule="SecurityGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cpg-93-89M">
+                        <rect key="frame" x="0.0" y="0.0" width="317" height="334"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="MainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="V9e-cA-KlC">
+                                <rect key="frame" x="0.0" y="0.0" width="317" height="334"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="انتخاب دستگاه" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbf-jl-oip">
+                                <rect key="frame" x="10" y="30" width="297" height="20"/>
+                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="czn-Sb-WTt">
+                                <rect key="frame" x="10" y="80" width="297" height="244"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DeviceTableViewCell" id="I9z-ZL-k1x" customClass="DeviceTableViewCell" customModule="SecurityGuard" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="297" height="39.333332061767578"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I9z-ZL-k1x" id="ccQ-wE-Ie0">
+                                            <rect key="frame" x="0.0" y="0.0" width="297" height="39.333332061767578"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVS-8R-2e4">
+                                                    <rect key="frame" x="16" y="10.999999999999998" width="265" height="17.333333333333329"/>
+                                                    <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hVS-8R-2e4" secondAttribute="bottom" id="QEM-zv-6Uw"/>
+                                                <constraint firstItem="hVS-8R-2e4" firstAttribute="leading" secondItem="ccQ-wE-Ie0" secondAttribute="leadingMargin" id="Spc-j3-3Lj"/>
+                                                <constraint firstItem="hVS-8R-2e4" firstAttribute="top" secondItem="ccQ-wE-Ie0" secondAttribute="topMargin" id="jqJ-5h-0S4"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hVS-8R-2e4" secondAttribute="trailing" id="zxY-eR-qse"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="hVS-8R-2e4" id="JJt-kw-0Ks"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="dMu-QO-wUQ" id="MMe-pK-y68"/>
+                                    <outlet property="delegate" destination="dMu-QO-wUQ" id="8u4-8M-uUI"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DgY-qF-H5M"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qbf-jl-oip" firstAttribute="top" secondItem="Cpg-93-89M" secondAttribute="top" constant="30" id="1YE-hi-Xxs"/>
+                            <constraint firstItem="V9e-cA-KlC" firstAttribute="leading" secondItem="Cpg-93-89M" secondAttribute="leading" id="82T-Ma-dGn"/>
+                            <constraint firstItem="DgY-qF-H5M" firstAttribute="trailing" secondItem="qbf-jl-oip" secondAttribute="trailing" constant="10" id="CnD-Z6-HIU"/>
+                            <constraint firstItem="czn-Sb-WTt" firstAttribute="top" secondItem="qbf-jl-oip" secondAttribute="bottom" constant="30" id="IFU-pE-waH"/>
+                            <constraint firstItem="DgY-qF-H5M" firstAttribute="trailing" secondItem="czn-Sb-WTt" secondAttribute="trailing" constant="10" id="JeB-k7-tzX"/>
+                            <constraint firstAttribute="trailing" secondItem="V9e-cA-KlC" secondAttribute="trailing" id="Vui-zg-ecS"/>
+                            <constraint firstAttribute="bottom" secondItem="V9e-cA-KlC" secondAttribute="bottom" id="deZ-n0-E4N"/>
+                            <constraint firstAttribute="bottom" secondItem="czn-Sb-WTt" secondAttribute="bottom" constant="10" id="nRW-hS-2f4"/>
+                            <constraint firstItem="czn-Sb-WTt" firstAttribute="leading" secondItem="DgY-qF-H5M" secondAttribute="leading" constant="10" id="pxz-O9-2H9"/>
+                            <constraint firstItem="qbf-jl-oip" firstAttribute="leading" secondItem="DgY-qF-H5M" secondAttribute="leading" constant="10" id="uye-Ot-FiR"/>
+                            <constraint firstItem="V9e-cA-KlC" firstAttribute="top" secondItem="Cpg-93-89M" secondAttribute="top" id="xR4-sP-hcU"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="317" height="334"/>
+                    <connections>
+                        <outlet property="tableView" destination="czn-Sb-WTt" id="dEv-sV-eWX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZHr-0m-TSf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4556" y="-896"/>
+        </scene>
+        <!--پارت ها-->
+        <scene sceneID="mvR-X2-glW">
+            <objects>
+                <viewController id="5SQ-eW-gHt" customClass="PartsViewController" customModule="SecurityGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V1t-hk-Npw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="MainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="OJP-Ov-oWd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AtU-xT-9JG">
+                                <rect key="frame" x="87.666666666666686" y="80" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="adg-Jb-M0m"/>
+                                    <constraint firstAttribute="height" constant="50" id="iPT-kh-oGA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="    دستگاه تست" image="Menu" backgroundImage="ButtonBackground">
+                                    <color key="titleColor" name="ButtonSaveText"/>
+                                </state>
+                                <connections>
+                                    <action selector="addDeviceTapped" destination="EOD-ze-qfe" eventType="touchUpInside" id="qzj-iz-v4n"/>
+                                    <action selector="deviceSelectorTapped" destination="5SQ-eW-gHt" eventType="touchUpInside" id="um5-0P-jOq"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3dW-sZ-CLz">
+                                <rect key="frame" x="10" y="180" width="355" height="349"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mBI-pr-3nd">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="103"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VkF-mU-Jfc">
+                                                <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="103"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="201" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOe-Vg-rXC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="77"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="Button"/>
+                                                        <connections>
+                                                            <action selector="inactiveTappedWithSender:" destination="5SQ-eW-gHt" eventType="touchUpInside" id="S3I-6R-AUV"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="غیرفعال" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2A8-Yu-16U">
+                                                        <rect key="frame" x="0.0" y="85" width="67.666666666666671" height="18"/>
+                                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                        <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XPf-Kp-7p0">
+                                                <rect key="frame" x="77.666666666666686" y="0.0" width="200" height="103"/>
+                                                <subviews>
+                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caG-ee-Jps">
+                                                        <rect key="frame" x="0.0" y="11.666666666666654" width="200" height="53.666666666666657"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="caG-ee-Jps" secondAttribute="height" multiplier="231:62" id="ATz-tB-DYd"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="پارت یک" backgroundImage="ButtonWide">
+                                                            <color key="titleColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="caG-ee-Jps" firstAttribute="width" secondItem="XPf-Kp-7p0" secondAttribute="width" id="JRf-VJ-aGV"/>
+                                                    <constraint firstAttribute="width" constant="200" id="OZM-0k-gzh"/>
+                                                    <constraint firstItem="caG-ee-Jps" firstAttribute="centerX" secondItem="XPf-Kp-7p0" secondAttribute="centerX" id="j3c-zG-cgl"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7PK-zc-cbZ">
+                                                <rect key="frame" x="287.66666666666669" y="0.0" width="67.333333333333314" height="103"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ad3-6T-KuX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.333333333333329" height="85"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="ButtonSelected"/>
+                                                        <connections>
+                                                            <action selector="activeTappedWithSender:" destination="5SQ-eW-gHt" eventType="touchUpInside" id="6YU-s2-AMn"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="فعال" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBr-Eb-nug">
+                                                        <rect key="frame" x="0.0" y="85" width="67.333333333333329" height="18"/>
+                                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                        <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="caG-ee-Jps" firstAttribute="centerY" secondItem="jOe-Vg-rXC" secondAttribute="centerY" id="RrE-ay-Awj"/>
+                                            <constraint firstItem="VkF-mU-Jfc" firstAttribute="width" secondItem="7PK-zc-cbZ" secondAttribute="width" id="x2u-xT-Pr2"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mF4-oN-D2M">
+                                        <rect key="frame" x="0.0" y="123" width="355" height="103"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bfx-59-pLT">
+                                                <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="103"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="202" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIL-AB-dqv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="85"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="Button"/>
+                                                        <connections>
+                                                            <action selector="inactiveTappedWithSender:" destination="5SQ-eW-gHt" eventType="touchUpInside" id="Ngp-px-KRD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="غیرفعال" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3G-nf-a7O">
+                                                        <rect key="frame" x="0.0" y="85" width="67.666666666666671" height="18"/>
+                                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                        <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lin-Xj-XuT">
+                                                <rect key="frame" x="77.666666666666686" y="0.0" width="200" height="103"/>
+                                                <subviews>
+                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmo-Wh-92z">
+                                                        <rect key="frame" x="0.0" y="15.666666666666682" width="200" height="53.666666666666657"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Fmo-Wh-92z" secondAttribute="height" multiplier="231:62" id="Qcz-bV-Jee"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="پارت دو" backgroundImage="ButtonWide">
+                                                            <color key="titleColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Fmo-Wh-92z" firstAttribute="width" secondItem="lin-Xj-XuT" secondAttribute="width" id="GVz-hu-9me"/>
+                                                    <constraint firstAttribute="width" constant="200" id="KZK-NU-5P1"/>
+                                                    <constraint firstItem="Fmo-Wh-92z" firstAttribute="centerX" secondItem="lin-Xj-XuT" secondAttribute="centerX" id="zcy-Or-YWs"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7qs-Lu-dKA">
+                                                <rect key="frame" x="287.66666666666669" y="0.0" width="67.333333333333314" height="103"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBa-uC-PCd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.333333333333329" height="85"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="ButtonSelected"/>
+                                                        <connections>
+                                                            <action selector="activeTappedWithSender:" destination="5SQ-eW-gHt" eventType="touchUpInside" id="0sP-37-qk9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="فعال" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alY-Pb-Tab">
+                                                        <rect key="frame" x="0.0" y="85" width="67.333333333333329" height="18"/>
+                                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                        <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="bfx-59-pLT" firstAttribute="width" secondItem="7qs-Lu-dKA" secondAttribute="width" id="aQf-H5-ENG"/>
+                                            <constraint firstItem="Fmo-Wh-92z" firstAttribute="centerY" secondItem="hIL-AB-dqv" secondAttribute="centerY" id="cEe-oA-5RV"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oDE-TJ-pOi">
+                                        <rect key="frame" x="0.0" y="246" width="355" height="103"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1zU-sh-ECH">
+                                                <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="103"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="203" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqk-Sw-GDz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="85"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="Button"/>
+                                                        <connections>
+                                                            <action selector="inactiveTappedWithSender:" destination="5SQ-eW-gHt" eventType="touchUpInside" id="NCQ-eP-jfc"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="غیرفعال" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VO-0c-UKE">
+                                                        <rect key="frame" x="0.0" y="85" width="67.666666666666671" height="18"/>
+                                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                        <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M8o-4W-fNh">
+                                                <rect key="frame" x="77.666666666666686" y="0.0" width="200" height="103"/>
+                                                <subviews>
+                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yty-bm-Ls7">
+                                                        <rect key="frame" x="0.0" y="15.666666666666682" width="200" height="53.666666666666657"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Yty-bm-Ls7" secondAttribute="height" multiplier="231:62" id="VXy-B7-tGZ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="پارت سه" backgroundImage="ButtonWide">
+                                                            <color key="titleColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="1Wf-jJ-dMt"/>
+                                                    <constraint firstItem="Yty-bm-Ls7" firstAttribute="centerX" secondItem="M8o-4W-fNh" secondAttribute="centerX" id="k0w-u9-JFM"/>
+                                                    <constraint firstItem="Yty-bm-Ls7" firstAttribute="width" secondItem="M8o-4W-fNh" secondAttribute="width" id="r1W-KM-ozv"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hRV-oD-uFV">
+                                                <rect key="frame" x="287.66666666666669" y="0.0" width="67.333333333333314" height="103"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14S-t1-vwj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.333333333333329" height="85"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="ButtonSelected"/>
+                                                        <connections>
+                                                            <action selector="activeTappedWithSender:" destination="5SQ-eW-gHt" eventType="touchUpInside" id="48L-yJ-bwb"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="فعال" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVY-Av-h6b">
+                                                        <rect key="frame" x="0.0" y="85" width="67.333333333333329" height="18"/>
+                                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                        <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="1zU-sh-ECH" firstAttribute="width" secondItem="hRV-oD-uFV" secondAttribute="width" id="gEG-yC-KS0"/>
+                                            <constraint firstItem="Yty-bm-Ls7" firstAttribute="centerY" secondItem="uqk-Sw-GDz" secondAttribute="centerY" id="hew-CU-oPJ"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rg9-hX-2jO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="OJP-Ov-oWd" secondAttribute="bottom" id="1Aa-Yt-rkF"/>
+                            <constraint firstItem="3dW-sZ-CLz" firstAttribute="top" secondItem="AtU-xT-9JG" secondAttribute="bottom" constant="50" id="JUv-1o-Gkd"/>
+                            <constraint firstItem="Rg9-hX-2jO" firstAttribute="trailing" secondItem="3dW-sZ-CLz" secondAttribute="trailing" constant="10" id="Pzc-7j-1QD"/>
+                            <constraint firstItem="OJP-Ov-oWd" firstAttribute="top" secondItem="V1t-hk-Npw" secondAttribute="top" id="dOE-JB-ZQE"/>
+                            <constraint firstItem="OJP-Ov-oWd" firstAttribute="leading" secondItem="V1t-hk-Npw" secondAttribute="leading" id="oGl-TG-j7F"/>
+                            <constraint firstAttribute="trailing" secondItem="OJP-Ov-oWd" secondAttribute="trailing" id="sHN-y0-cAe"/>
+                            <constraint firstItem="AtU-xT-9JG" firstAttribute="centerX" secondItem="Rg9-hX-2jO" secondAttribute="centerX" id="vhU-o0-JUA"/>
+                            <constraint firstItem="3dW-sZ-CLz" firstAttribute="leading" secondItem="Rg9-hX-2jO" secondAttribute="leading" constant="10" id="xNL-lS-sT0"/>
+                            <constraint firstItem="AtU-xT-9JG" firstAttribute="top" secondItem="Rg9-hX-2jO" secondAttribute="top" constant="30" id="xyT-0j-xdI"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="پارت ها" image="Charge" id="2S2-1e-Wtd">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="2"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="deviceButton" destination="AtU-xT-9JG" id="SAy-GO-JXT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8S5-x1-3pG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3428" y="-72"/>
+        </scene>
+        <!--سایر موارد-->
+        <scene sceneID="bci-h7-37q">
+            <objects>
+                <viewController id="CJJ-ED-i44" customClass="OthersViewController" customModule="SecurityGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fqE-5P-CR4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="MainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="MaT-TK-0mP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCU-D2-cuF">
+                                <rect key="frame" x="87.666666666666686" y="80" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jfg-pY-9yk"/>
+                                    <constraint firstAttribute="width" constant="200" id="pj3-yf-SwW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="    دستگاه تست" image="Menu" backgroundImage="ButtonBackground">
+                                    <color key="titleColor" name="ButtonSaveText"/>
+                                </state>
+                                <connections>
+                                    <action selector="addDeviceTapped" destination="EOD-ze-qfe" eventType="touchUpInside" id="lhM-0f-9A8"/>
+                                    <action selector="deviceSelectorTapped" destination="CJJ-ED-i44" eventType="touchUpInside" id="cJL-Rw-1QV"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UrK-5e-Qid">
+                                <rect key="frame" x="10" y="180" width="355" height="103"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="D3P-gU-q61">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="103"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xL5-lw-5Ze">
+                                                <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="103"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cjk-pC-QQE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="77"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="Button"/>
+                                                        <connections>
+                                                            <action selector="inactiveTappedWithSender:" destination="CJJ-ED-i44" eventType="touchUpInside" id="mpr-Ha-zlU"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="خاموش" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cti-2q-DPH">
+                                                        <rect key="frame" x="0.0" y="85" width="67.666666666666671" height="18"/>
+                                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                        <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJu-Z5-nvh">
+                                                <rect key="frame" x="77.666666666666686" y="0.0" width="200" height="103"/>
+                                                <subviews>
+                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJJ-FW-EcE">
+                                                        <rect key="frame" x="0.0" y="11.666666666666654" width="200" height="53.666666666666657"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="jJJ-FW-EcE" secondAttribute="height" multiplier="231:62" id="LFb-O6-r2h"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="خاموش/روشن" backgroundImage="ButtonWide">
+                                                            <color key="titleColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="jJJ-FW-EcE" firstAttribute="centerX" secondItem="kJu-Z5-nvh" secondAttribute="centerX" id="Ca2-WR-N7q"/>
+                                                    <constraint firstItem="jJJ-FW-EcE" firstAttribute="width" secondItem="kJu-Z5-nvh" secondAttribute="width" id="PIO-Zq-0id"/>
+                                                    <constraint firstAttribute="width" constant="200" id="rzF-sC-ebd"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="O8K-If-fXB">
+                                                <rect key="frame" x="287.66666666666669" y="0.0" width="67.333333333333314" height="103"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YsZ-Ib-jyE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.333333333333329" height="85"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="ButtonSelected"/>
+                                                        <connections>
+                                                            <action selector="activeTappedWithSender:" destination="CJJ-ED-i44" eventType="touchUpInside" id="2mu-ef-IRM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="روشن" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unK-Zs-SFR">
+                                                        <rect key="frame" x="0.0" y="85" width="67.333333333333329" height="18"/>
+                                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                        <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="jJJ-FW-EcE" firstAttribute="centerY" secondItem="Cjk-pC-QQE" secondAttribute="centerY" id="g8d-m6-DH8"/>
+                                            <constraint firstItem="xL5-lw-5Ze" firstAttribute="width" secondItem="O8K-If-fXB" secondAttribute="width" id="uTW-Zl-LN2"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="pTs-gz-plI">
+                                <rect key="frame" x="10" y="333" width="355" height="400"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yrc-32-USp">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="80.666666666666671"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jX-fa-CcH">
+                                                <rect key="frame" x="0.0" y="0.0" width="173.66666666666666" height="80.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="   باز کردن درب" backgroundImage="ButtonBackground">
+                                                    <color key="titleColor" name="ButtonSaveText"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addDeviceTapped" destination="EOD-ze-qfe" eventType="touchUpInside" id="wbp-KO-wxf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc0-xm-uZr">
+                                                <rect key="frame" x="181.66666666666663" y="0.0" width="173.33333333333337" height="80.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="  شارژ" backgroundImage="ButtonBackground">
+                                                    <color key="titleColor" name="ButtonSaveText"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addDeviceTapped" destination="EOD-ze-qfe" eventType="touchUpInside" id="CDp-Qc-9qN"/>
+                                                    <action selector="chargeTapped" destination="CJJ-ED-i44" eventType="touchUpInside" id="oyH-Su-Kvv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YyR-q6-0yx">
+                                        <rect key="frame" x="0.0" y="106.66666666666669" width="355" height="80.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="za7-qX-sSh">
+                                                <rect key="frame" x="0.0" y="0.0" width="173.66666666666666" height="80.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="   گزارش فعالیت ها" backgroundImage="ButtonBackground">
+                                                    <color key="titleColor" name="ButtonSaveText"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addDeviceTapped" destination="EOD-ze-qfe" eventType="touchUpInside" id="qfF-GB-fqM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhK-vH-ML2">
+                                                <rect key="frame" x="181.66666666666663" y="0.0" width="173.33333333333337" height="80.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="   تنظیمات" backgroundImage="ButtonBackground">
+                                                    <color key="titleColor" name="ButtonSaveText"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addDeviceTapped" destination="EOD-ze-qfe" eventType="touchUpInside" id="4O0-vG-HUV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OP2-o1-c8f">
+                                        <rect key="frame" x="0.0" y="213" width="355" height="80.666666666666686"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNV-m4-EA0">
+                                                <rect key="frame" x="0.0" y="0.0" width="173.66666666666666" height="80.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="   نام گزاری ریموت ها" backgroundImage="ButtonBackground">
+                                                    <color key="titleColor" name="ButtonSaveText"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addDeviceTapped" destination="EOD-ze-qfe" eventType="touchUpInside" id="B3K-Pe-XGY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JqM-AA-b7X">
+                                                <rect key="frame" x="181.66666666666663" y="0.0" width="173.33333333333337" height="80.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="   نام گزاری زون ها" backgroundImage="ButtonBackground">
+                                                    <color key="titleColor" name="ButtonSaveText"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addDeviceTapped" destination="EOD-ze-qfe" eventType="touchUpInside" id="syL-hz-aJW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wWW-aR-4s7">
+                                        <rect key="frame" x="0.0" y="319.66666666666663" width="355" height="80.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21J-a1-Sya">
+                                                <rect key="frame" x="0.0" y="0.0" width="173.66666666666666" height="80.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="   درباره ما" backgroundImage="ButtonBackground">
+                                                    <color key="titleColor" name="ButtonSaveText"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addDeviceTapped" destination="EOD-ze-qfe" eventType="touchUpInside" id="nDk-ty-7WD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJI-lQ-g5J">
+                                                <rect key="frame" x="181.66666666666663" y="0.0" width="173.33333333333337" height="80.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="   ثبت دستگاه" backgroundImage="ButtonBackground">
+                                                    <color key="titleColor" name="ButtonSaveText"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addDeviceTapped" destination="EOD-ze-qfe" eventType="touchUpInside" id="Aoc-OI-zbR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="XrN-yz-FyJ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Ex-nU-DSm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UrK-5e-Qid" firstAttribute="leading" secondItem="0Ex-nU-DSm" secondAttribute="leading" constant="10" id="8dW-F6-su2"/>
+                            <constraint firstItem="pTs-gz-plI" firstAttribute="leading" secondItem="0Ex-nU-DSm" secondAttribute="leading" constant="10" id="CxP-lh-MGM"/>
+                            <constraint firstItem="0Ex-nU-DSm" firstAttribute="trailing" secondItem="UrK-5e-Qid" secondAttribute="trailing" constant="10" id="F0P-5G-SjU"/>
+                            <constraint firstItem="pTs-gz-plI" firstAttribute="top" secondItem="UrK-5e-Qid" secondAttribute="bottom" constant="50" id="F3A-tA-zOz"/>
+                            <constraint firstItem="MaT-TK-0mP" firstAttribute="leading" secondItem="fqE-5P-CR4" secondAttribute="leading" id="GKP-bI-D85"/>
+                            <constraint firstAttribute="trailing" secondItem="MaT-TK-0mP" secondAttribute="trailing" id="J4q-jp-5o3"/>
+                            <constraint firstAttribute="bottom" secondItem="MaT-TK-0mP" secondAttribute="bottom" id="Lue-FX-Bhl"/>
+                            <constraint firstItem="GCU-D2-cuF" firstAttribute="top" secondItem="0Ex-nU-DSm" secondAttribute="top" constant="30" id="MI1-Ot-4VP"/>
+                            <constraint firstItem="UrK-5e-Qid" firstAttribute="top" secondItem="GCU-D2-cuF" secondAttribute="bottom" constant="50" id="TM5-en-fGO"/>
+                            <constraint firstItem="GCU-D2-cuF" firstAttribute="centerX" secondItem="0Ex-nU-DSm" secondAttribute="centerX" id="fsr-QY-Zo0"/>
+                            <constraint firstAttribute="trailing" secondItem="pTs-gz-plI" secondAttribute="trailing" constant="10" id="o3x-qu-5LI"/>
+                            <constraint firstItem="MaT-TK-0mP" firstAttribute="top" secondItem="fqE-5P-CR4" secondAttribute="top" id="qkO-1P-ar1"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="سایر موارد" image="Setting" id="JeH-I2-MDi">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="2"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="deviceButton" destination="GCU-D2-cuF" id="wWr-po-B3J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dgg-Aj-YxU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3428" y="765.51724137931035"/>
         </scene>
     </scenes>
     <designables>
@@ -356,19 +1228,26 @@
     </designables>
     <resources>
         <image name="BigBackground" width="498.5" height="489.5"/>
+        <image name="Button" width="64" height="64"/>
         <image name="ButtonBackground" width="452.5" height="68.5"/>
+        <image name="ButtonSelected" width="64" height="64"/>
+        <image name="ButtonWide" width="231" height="62.5"/>
+        <image name="Charge" width="27" height="23.5"/>
         <image name="Dark_Background" width="414" height="736"/>
         <image name="Finger_Print_Icon" width="174" height="204"/>
         <image name="MainBackground" width="540" height="960"/>
+        <image name="Menu" width="25" height="25"/>
         <image name="OrangeButtonBackground" width="299.5" height="57"/>
+        <image name="Setting" width="21.5" height="22.5"/>
+        <image name="StateCheck" width="23" height="24"/>
         <image name="TextFieldBackground" width="457.5" height="80.5"/>
         <image name="Textfield_White_Background" width="304" height="61.5"/>
         <image name="Tick" width="36" height="36.5"/>
         <namedColor name="ButtonSaveText">
-            <color red="0.37647058823529411" green="0.60784313725490191" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.37599998712539673" green="0.60799998044967651" blue="0.043000001460313797" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Text">
-            <color red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.25900000333786011" green="0.25900000333786011" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -6,6 +6,8 @@ target 'SecurityGuard' do
   use_frameworks!
 
   pod 'Localize-Swift'
+  pod 'Presentr'
+
 
   # Pods for SecurityGuard
 

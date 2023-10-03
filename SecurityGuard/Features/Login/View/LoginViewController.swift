@@ -43,52 +43,57 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction private func loginViaUserTapped() {
+      
         if !loginViewModel.isUserRegistered {
             
-            let (isRegistered, error) = loginViewModel.isUserValidToRegister(username: usernameTextField.text, password: passwordTextField.text)
+            let error = loginViewModel.isUserValidToRegister(username: usernameTextField.text, password: passwordTextField.text)
             
-            if !isRegistered {
-                let message = error!
-                AlertController.shared.present(in: self, message: message)
+            if let error = error {
+                AlertController.shared.present(in: self, message: error)
                 return
             }
             
             let user = User(username: usernameTextField.text!, password: passwordTextField.text!)
-            if loginViewModel.register(user: user) {
+            if User.register(user: user) {
                 if let _ = user.devices {
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let controller = storyboard.instantiateViewController(withIdentifier: "HomeViewController")
-                    self.navigationController?.pushViewController(controller, animated: true)
+                    self.showMainTabbar()
                 }
                 else {
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let controller = storyboard.instantiateViewController(withIdentifier: "AddDeviceViewController")
-                    self.navigationController?.pushViewController(controller, animated: true)
+                    self.showAddDevice()
                 }
             }
             
         }
         else {
-            let (isLoggedIn, error) = loginViewModel.login(username: usernameTextField.text, password: passwordTextField.text)
-            if !isLoggedIn {
-                let message = error!
-                AlertController.shared.present(in: self, message: message)
+            let error = loginViewModel.login(username: usernameTextField.text, password: passwordTextField.text)
+            if let error = error {
+                AlertController.shared.present(in: self, message: error)
                 return
             }
             else {
-                
-                if let _ = loginViewModel.user?.devices {
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let controller = storyboard.instantiateViewController(withIdentifier: "HomeViewController")
-                    self.navigationController?.pushViewController(controller, animated: true)
+                if let _ = User.getUser()?.devices {
+                    self.showMainTabbar()
                 }
                 else {
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let controller = storyboard.instantiateViewController(withIdentifier: "AddDeviceViewController")
-                    self.navigationController?.pushViewController(controller, animated: true)
+                    self.showAddDevice()
                 }
             }
         }
+    }
+    
+    private func showMainTabbar() {
+        let sceneDelegate = UIApplication.shared.connectedScenes
+            .first!.delegate as! SceneDelegate
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "TabBarController") as! TabBarController
+        sceneDelegate.window!.rootViewController = controller
+        sceneDelegate.window?.makeKeyAndVisible()
+    }
+    
+    private func showAddDevice() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "AddDeviceViewController")
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     @IBAction private func loginViaFaceIDTapped() {
@@ -103,7 +108,12 @@ class LoginViewController: UIViewController {
                 AlertController.shared.present(in: self, message: error!)
                 return
             }
-            AlertController.shared.present(in: self, message: "Congurajulation!")
+            if let _ = User.getUser()?.devices {
+                self.showMainTabbar()
+            }
+            else {
+                self.showAddDevice()
+            }
         }
     }
     
@@ -111,7 +121,6 @@ class LoginViewController: UIViewController {
         view.endEditing(true)
     }
     
-
     /*
     // MARK: - Navigation
 

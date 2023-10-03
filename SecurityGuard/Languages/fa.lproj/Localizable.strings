@@ -23,3 +23,4 @@
 "User is not exist" = "کاربر وجود ندارد";
 "Fill all items" = "تمام موارد را وارد کنید";
 "The device has been added successfully" = "دستگاه با موفقیت اضافه شد";
+"This device can't send SMS" = "این دستگاه نمی تواند پیامک ارسال کند";

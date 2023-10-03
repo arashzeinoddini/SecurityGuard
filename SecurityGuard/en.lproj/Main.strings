@@ -1,30 +1,39 @@
 
+/* Class = "UITabBarItem"; title = "پارت ها"; ObjectID = "2S2-1e-Wtd"; */
+"2S2-1e-Wtd.title" = "پارت ها";
+
 /* Class = "UITextField"; placeholder = "نام کاربری را وارد کنید"; ObjectID = "8mH-Lb-9eU"; */
-"8mH-Lb-9eU.placeholder" = "Username";
+"8mH-Lb-9eU.placeholder" = "نام کاربری را وارد کنید";
 
 /* Class = "UITextField"; placeholder = "رمز عبور را وارد کنید"; ObjectID = "A5O-is-aBN"; */
-"A5O-is-aBN.placeholder" = "Password";
+"A5O-is-aBN.placeholder" = "رمز عبور را وارد کنید";
 
 /* Class = "UIButton"; normalTitle = "ورود"; ObjectID = "CB4-CN-F42"; */
-"CB4-CN-F42.normalTitle" = "Login";
+"CB4-CN-F42.normalTitle" = "ورود";
 
 /* Class = "UILabel"; text = "ورود به برنامه"; ObjectID = "CEQ-re-gFf"; */
-"CEQ-re-gFf.text" = "Login";
+"CEQ-re-gFf.text" = "ورود به برنامه";
+
+/* Class = "UITabBarItem"; title = "فعال سازی"; ObjectID = "FSF-qW-jfX"; */
+"FSF-qW-jfX.title" = "فعال سازی";
+
+/* Class = "UITabBarItem"; title = "سایر موارد"; ObjectID = "JeH-I2-MDi"; */
+"JeH-I2-MDi.title" = "سایر موارد";
 
 /* Class = "UIButton"; normalTitle = "   ذخیره"; ObjectID = "Q0H-aF-w94"; */
-"Q0H-aF-w94.normalTitle" = "   Save";
+"Q0H-aF-w94.normalTitle" = "   ذخیره";
 
 /* Class = "UILabel"; text = "افزودن دستگاه"; ObjectID = "hto-Jd-k5v"; */
-"hto-Jd-k5v.text" = "Add Device";
+"hto-Jd-k5v.text" = "افزودن دستگاه";
 
 /* Class = "UITextField"; placeholder = "شماره تلفن دستگاه"; ObjectID = "pcj-1g-ijP"; */
-"pcj-1g-ijP.placeholder" = "Phone number";
+"pcj-1g-ijP.placeholder" = "شماره تلفن دستگاه";
 
 /* Class = "UITextField"; placeholder = "رمز دستگاه"; ObjectID = "sjC-bN-TWV"; */
-"sjC-bN-TWV.placeholder" = "Password";
+"sjC-bN-TWV.placeholder" = "رمز دستگاه";
 
 /* Class = "UITextField"; placeholder = "نام دستگاه"; ObjectID = "taU-um-NzM"; */
-"taU-um-NzM.placeholder" = "Device name";
+"taU-um-NzM.placeholder" = "نام دستگاه";
 
 /* Class = "UITextField"; placeholder = "توضیحات"; ObjectID = "wJs-Eg-xj6"; */
-"wJs-Eg-xj6.placeholder" = "Description";
+"wJs-Eg-xj6.placeholder" = "توضیحات";

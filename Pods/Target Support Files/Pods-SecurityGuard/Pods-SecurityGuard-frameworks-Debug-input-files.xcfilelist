@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-SecurityGuard/Pods-SecurityGuard-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework
+${BUILT_PRODUCTS_DIR}/Presentr/Presentr.framework

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C7CC7F5CE59E23C70C91AA0E /* Pods_SecurityGuard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36630C76A4B36A2536BCBA9B /* Pods_SecurityGuard.framework */; };
+		F1271B7C2AAB1C7F00A5DA5F /* PartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1271B7B2AAB1C7F00A5DA5F /* PartsViewController.swift */; };
+		F1271B802AAB20B700A5DA5F /* OthersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1271B7F2AAB20B700A5DA5F /* OthersViewController.swift */; };
+		F14DF5802A9B539F0068ECD1 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14DF57F2A9B539F0068ECD1 /* FontExtensions.swift */; };
 		F15AD2DA2A84BC650082331F /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15AD2D92A84BC650082331F /* AlertController.swift */; };
 		F15AD2DC2A84D1D90082331F /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15AD2DB2A84D1D90082331F /* AuthManager.swift */; };
 		F15B299C2A83D970005B5C1A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15B299B2A83D970005B5C1A /* User.swift */; };
@@ -20,6 +23,8 @@
 		F193345C2A8CB33F0011403C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F193345B2A8CB33F0011403C /* Colors.xcassets */; };
 		F193345F2A8CB3DB0011403C /* B Yekan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F193345E2A8CB3DB0011403C /* B Yekan.ttf */; };
 		F19334662A8CF4340011403C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19334652A8CF4340011403C /* HomeViewController.swift */; };
+		F1997DCA2AAEFC9A000C9C99 /* DeviceSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1997DC92AAEFC9A000C9C99 /* DeviceSelectorViewController.swift */; };
+		F1997DCD2AAEFCC9000C9C99 /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1997DCC2AAEFCC9000C9C99 /* DeviceTableViewCell.swift */; };
 		F1A118472A80D44C00BE2349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A118462A80D44C00BE2349 /* AppDelegate.swift */; };
 		F1A118492A80D44C00BE2349 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A118482A80D44C00BE2349 /* SceneDelegate.swift */; };
 		F1A1184E2A80D44C00BE2349 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A1184C2A80D44C00BE2349 /* Main.storyboard */; };
@@ -27,11 +32,18 @@
 		F1A118532A80D44D00BE2349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A118512A80D44D00BE2349 /* LaunchScreen.storyboard */; };
 		F1A1185F2A80DB8200BE2349 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A1185E2A80DB8200BE2349 /* LoginViewController.swift */; };
 		F1A118632A80E47300BE2349 /* PaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A118622A80E47300BE2349 /* PaddedTextField.swift */; };
+		F1A4F1792A9CABB400CC147D /* ActivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A4F1782A9CABB400CC147D /* ActivationViewController.swift */; };
+		F1D9AD482A9A078F00029A8C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D9AD472A9A078F00029A8C /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		36630C76A4B36A2536BCBA9B /* Pods_SecurityGuard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecurityGuard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF7E304DBA56746BD454470 /* Pods-SecurityGuard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecurityGuard.debug.xcconfig"; path = "Target Support Files/Pods-SecurityGuard/Pods-SecurityGuard.debug.xcconfig"; sourceTree = "<group>"; };
+		F1271B7B2AAB1C7F00A5DA5F /* PartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartsViewController.swift; sourceTree = "<group>"; };
+		F1271B7F2AAB20B700A5DA5F /* OthersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersViewController.swift; sourceTree = "<group>"; };
+		F14DF57F2A9B539F0068ECD1 /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
+		F14DF5842A9B5A7E0068ECD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		F14DF5852A9B5A830068ECD1 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/Main.strings; sourceTree = "<group>"; };
 		F15AD2D92A84BC650082331F /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		F15AD2DB2A84D1D90082331F /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		F15B299B2A83D970005B5C1A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -44,9 +56,9 @@
 		F19334592A8CAAB80011403C /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		F193345B2A8CB33F0011403C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F193345E2A8CB3DB0011403C /* B Yekan.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "B Yekan.ttf"; sourceTree = "<group>"; };
-		F19334612A8CEB620011403C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		F19334632A8CEB640011403C /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/Main.strings; sourceTree = "<group>"; };
 		F19334652A8CF4340011403C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F1997DC92AAEFC9A000C9C99 /* DeviceSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSelectorViewController.swift; sourceTree = "<group>"; };
+		F1997DCC2AAEFCC9000C9C99 /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
 		F1A118432A80D44C00BE2349 /* SecurityGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecurityGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A118462A80D44C00BE2349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1A118482A80D44C00BE2349 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +68,8 @@
 		F1A118542A80D44D00BE2349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1A1185E2A80DB8200BE2349 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F1A118622A80E47300BE2349 /* PaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedTextField.swift; sourceTree = "<group>"; };
+		F1A4F1782A9CABB400CC147D /* ActivationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationViewController.swift; sourceTree = "<group>"; };
+		F1D9AD472A9A078F00029A8C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F2BE9F37A7F15DF71FAE2A7A /* Pods-SecurityGuard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecurityGuard.release.xcconfig"; path = "Target Support Files/Pods-SecurityGuard/Pods-SecurityGuard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +102,38 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F1271B792AAB1C6500A5DA5F /* Parts */ = {
+			isa = PBXGroup;
+			children = (
+				F1271B7A2AAB1C6F00A5DA5F /* View */,
+			);
+			path = Parts;
+			sourceTree = "<group>";
+		};
+		F1271B7A2AAB1C6F00A5DA5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1271B7B2AAB1C7F00A5DA5F /* PartsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1271B7D2AAB20A200A5DA5F /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				F1271B7E2AAB20AD00A5DA5F /* View */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		F1271B7E2AAB20AD00A5DA5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1271B7F2AAB20B700A5DA5F /* OthersViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F15B299A2A83D966005B5C1A /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				F15B29A02A83DAB4005B5C1A /* UserDefaultExtensions.swift */,
+				F14DF57F2A9B539F0068ECD1 /* FontExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -171,6 +218,31 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		F1997DC72AAEFC7E000C9C99 /* Device Selector */ = {
+			isa = PBXGroup;
+			children = (
+				F1997DCB2AAEFCB4000C9C99 /* Cell */,
+				F1997DC82AAEFC88000C9C99 /* View */,
+			);
+			path = "Device Selector";
+			sourceTree = "<group>";
+		};
+		F1997DC82AAEFC88000C9C99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1997DC92AAEFC9A000C9C99 /* DeviceSelectorViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1997DCB2AAEFCB4000C9C99 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F1997DCC2AAEFCC9000C9C99 /* DeviceTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		F1A1183A2A80D44C00BE2349 = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +284,11 @@
 		F1A1185A2A80DB5F00BE2349 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				F1997DC72AAEFC7E000C9C99 /* Device Selector */,
+				F1271B7D2AAB20A200A5DA5F /* Others */,
+				F1271B792AAB1C6500A5DA5F /* Parts */,
+				F1A4F1762A9CAB9400CC147D /* Activation */,
+				F1D9AD432A9A014A00029A8C /* Tabbar */,
 				F19334642A8CF4140011403C /* Home */,
 				F182DAC02A8CA6730097AC01 /* Add Device */,
 				F1A1185B2A80DB6900BE2349 /* Login */,
@@ -259,6 +336,38 @@
 				F1A118622A80E47300BE2349 /* PaddedTextField.swift */,
 			);
 			path = PaddedTextField;
+			sourceTree = "<group>";
+		};
+		F1A4F1762A9CAB9400CC147D /* Activation */ = {
+			isa = PBXGroup;
+			children = (
+				F1A4F1772A9CAB9D00CC147D /* View */,
+			);
+			path = Activation;
+			sourceTree = "<group>";
+		};
+		F1A4F1772A9CAB9D00CC147D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1A4F1782A9CABB400CC147D /* ActivationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1D9AD432A9A014A00029A8C /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				F1D9AD442A9A015700029A8C /* View */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		F1D9AD442A9A015700029A8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1D9AD472A9A078F00029A8C /* TabBarController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +491,8 @@
 			files = (
 				F15B299E2A83D9BA005B5C1A /* LoginViewModel.swift in Sources */,
 				F15AD2DC2A84D1D90082331F /* AuthManager.swift in Sources */,
+				F14DF5802A9B539F0068ECD1 /* FontExtensions.swift in Sources */,
+				F1997DCA2AAEFC9A000C9C99 /* DeviceSelectorViewController.swift in Sources */,
 				F19334572A8CA9ED0011403C /* AddDeviceViewModel.swift in Sources */,
 				F193345A2A8CAAB80011403C /* Device.swift in Sources */,
 				F1A1185F2A80DB8200BE2349 /* LoginViewController.swift in Sources */,
@@ -389,8 +500,13 @@
 				F19334542A8CA9D00011403C /* AddDeviceViewController.swift in Sources */,
 				F1A118632A80E47300BE2349 /* PaddedTextField.swift in Sources */,
 				F15AD2DA2A84BC650082331F /* AlertController.swift in Sources */,
+				F1A4F1792A9CABB400CC147D /* ActivationViewController.swift in Sources */,
+				F1271B802AAB20B700A5DA5F /* OthersViewController.swift in Sources */,
 				F15B299C2A83D970005B5C1A /* User.swift in Sources */,
 				F1A118472A80D44C00BE2349 /* AppDelegate.swift in Sources */,
+				F1997DCD2AAEFCC9000C9C99 /* DeviceTableViewCell.swift in Sources */,
+				F1D9AD482A9A078F00029A8C /* TabBarController.swift in Sources */,
+				F1271B7C2AAB1C7F00A5DA5F /* PartsViewController.swift in Sources */,
 				F19334662A8CF4340011403C /* HomeViewController.swift in Sources */,
 				F1A118492A80D44C00BE2349 /* SceneDelegate.swift in Sources */,
 			);
@@ -412,8 +528,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				F1A1184D2A80D44C00BE2349 /* Base */,
-				F19334612A8CEB620011403C /* en */,
-				F19334632A8CEB640011403C /* fa */,
+				F14DF5842A9B5A7E0068ECD1 /* en */,
+				F14DF5852A9B5A830068ECD1 /* fa */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
